@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+</head>
+<style>
+#body{
+  background-color: #007f80;
+}
+#result{
+}
+h3{
+    text-align: center;
+}
+#result{
+    float: center;
+}
+</style>
+
+<body>
+  <div class="container">
+    <h3>Mortgage Calculator</h3>
+    <br><br>
+  </div>
+
+  <div class="container">
+    <section>
+      <div id="sub">
+          <label for="input">Loan Balance</label>
+          <input type="text" class="form-control" id="loanBalance" style="background:lightblue">
+         </div>
+         <br><br>
+
+         <label for="input">Interest Rate (%)</label>
+         <input type="text" class="form-control" id="interestRate" style="background:lightblue">
+          </div>
+          <br><br>
+
+          <label for="input">Loan Term (years)</label>
+          <input type="text" class="form-control" id="loanTerm" style="background:lightblue">
+          </div>
+          <br><br><br>
+
+                  <label for="input">Time Period</label>
+                  <select id="timePeriod">
+                  <option value="12" style="background:lightblue" selected>Monthly</option>
+                  <option value="6">Bimonthly</option>
+          </select>
+          </div>
+          <br><br><br>
+
+          <button class="button" id="SubmitButton" onclick="Calculate()">Calculate</button>
+          <p class="result" id="result"></p>
+          
+</div>
+</section>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
